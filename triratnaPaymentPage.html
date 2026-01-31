@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triratna Centers – Contributions</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            background-image: url("https://1.bp.blogspot.com/_TFjGQZYbyVI/S9a6dNPL8iI/AAAAAAAAAgo/QRwxU76TMa8/s1600/Aloka+Seattle+refuge+tree+painting.jpg");
+        
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 60px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 50px;
+            animation: fadeDown 1s ease;
+        }
+
+        .page-title h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: #d0d0d0;
+        }
+
+        .centers {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .center-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 30px;
+            border-radius: 12px;
+
+            /* Reduced blur */
+            background: rgba(0, 0, 0, 0.30);
+            backdrop-filter: blur(2px);
+
+            color: #ffffff;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .center-card:nth-child(1) { animation-delay: 0.2s; }
+        .center-card:nth-child(2) { animation-delay: 0.4s; }
+        .center-card:nth-child(3) { animation-delay: 0.6s; }
+        .center-card:nth-child(4) { animation-delay: 0.8s; }
+
+        .center-name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .pay-btn {
+            padding: 12px 26px;
+            background-color: #c9a14a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .pay-btn:hover {
+            background-color: #b18d3f;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .center-card {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .page-title h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+
+        <div class="page-title">
+            <h1>Triratna Centers</h1>
+            <p>Offerings & Contributions</p>
+        </div>
+
+        <div class="centers">
+
+            <div class="center-card">
+                <div class="center-name">Bhaja Triratna Centre – Gateway 1</div>
+                <a href="https://triratnaindiain.github.io/bhajapaymentpage3/" class="pay-btn">Contribute</a>
+            </div>
+
+            <div class="center-card">
+                <div class="center-name">Bhaja Triratna Centre – Gateway 2</div>
+                <a href="https://triratnaindiain.github.io/bhajapaymentpage2/" class="pay-btn">Contribute</a>
+            </div>
+
+            <div class="center-card">
+                <div class="center-name">Bhaja Triratna Centre – Main Gateway</div>
+                <a href="https://triratnaindiain.github.io/bhajapaymentgateway/" class="pay-btn">Contribute</a>
+            </div>
+
+            <div class="center-card">
+                <div class="center-name">Triratna Razorpay Gateway</div>
+                <a href="https://triratnaindiain.github.io/triratna_razorpay_payment_link/" class="pay-btn">Contribute</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
